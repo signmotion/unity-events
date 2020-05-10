@@ -1,14 +1,14 @@
 {
   "name": "com.github.signmotion.unityevents",
   "displayName": "UnityEvents",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "unity": "2019.3",
   "description": "A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.",
   "dependencies": {
-    "com.unity.burst": "0.2.4-preview.41",
+    "com.unity.burst": "1.1.1",
     "com.unity.collections": "0.0.9-preview.11",
     "com.unity.jobs": "0.0.7-preview.6",
-    "com.unity.mathematics": "0.0.12-preview.19"
+    "com.unity.mathematics": "1.1.0"
   },
   "repository": {
     "footprint": "7885d0f54cdae85360fa58ef4c476844203ba948",
