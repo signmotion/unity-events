@@ -1,3 +1,11 @@
+## TODO
+Doesn't work correctly with Unity 2019.3.
+
+Any events are not send when a scene started. No log output.
+
+But all tests is green...
+
+
 # Unity Events 2.0 #
 A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.
 
