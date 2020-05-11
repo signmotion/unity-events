@@ -1,7 +1,7 @@
 {
   "name": "com.github.signmotion.unityevents",
-  "displayName": "UnityEvents",
-  "version": "0.1.1",
+  "displayName": "Unity Events With Jobs",
+  "version": "0.1.2",
   "unity": "2019.3",
   "description": "A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.\nCustom Event Systems can be created to control when events are processed instead of relying on the update ticks.",
   "dependencies": {
@@ -14,18 +14,15 @@
     "Unity",
     "event",
     "events system",
+    "deferred events",
+    "callback events",
     "jobs",
+    "trigger",
     "multithreads"
   ],
   "author": {
-    "name": "Galvaniv Games",
+    "name": "Galvanic Games",
     "email": "sales@galvanicgames.com",
     "url": "http://www.galvanicgames.com"
-  },
-  "repository": {
-    "footprint": "7885d0f54cdae85360fa58ef4c476844203ba948",
-    "type": "git",
-    "url": "https://github.com/signmotion/unity-events.git",
-    "revision": "e66f4509ec01f3564fd5ed8f281f96d23d4be711"
   }
 }
