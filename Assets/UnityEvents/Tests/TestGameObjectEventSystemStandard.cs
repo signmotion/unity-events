@@ -33,12 +33,14 @@ namespace UnityEvents.Test
 		public IEnumerator TestSimpleSubscribeAndEvent()
 		{
 			int value = 0;
-			Action<EvSimpleEvent> callback = x => { value += 1; };
+			Action<EvSimpleEvent> callback = x => { value += 1; Debug.Log("TestSimpleSubscribeAndEvent()"); };
 			
 			_gameObject.Subscribe(callback);
-			
+
+			Debug.LogFormat("TestSimpleSubscribeAndEvent() value {0}", value);
 			_gameObject.SendEvent(new EvSimpleEvent());
-			
+			Debug.LogFormat("TestSimpleSubscribeAndEvent() value {0}", value);
+
 			yield return new WaitForFixedUpdate();
 			
 			Assert.IsTrue(value == 1);

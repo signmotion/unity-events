@@ -32,6 +32,8 @@ namespace UnityEvents.Example
 
 		private void OnEnable()
 		{
+			Debug.Log("OnEnable()");
+
 			// Jobs work with the global simulation and global UI event systems as well as the GameObject system. This
 			// will just show examples with the global simulation system.
 			//
@@ -39,15 +41,20 @@ namespace UnityEvents.Example
 			// long tasks very short. Afterwards the callback functions are invoked so the listener can use the results
 			// of the job.
 			GlobalEventSystem.SubscribeWithJob<ExampleJob, EvExampleEvent>(new ExampleJob(), OnJobFinished);
+			SendEvents();
 		}
 
 		private void OnDisable()
 		{
+			Debug.Log("OnDisable()");
+
 			GlobalEventSystem.UnsubscribeWithJob<ExampleJob, EvExampleEvent>(OnJobFinished);
 		}
 
 		public void SendEvents()
 		{
+			Debug.Log("SendEvents()");
+
 			// Job listeners trigger on events like anything else. You can have job listeners and regular listeners to
 			// a single event.
 			GlobalEventSystem.SendEvent(new EvExampleEvent(10));
