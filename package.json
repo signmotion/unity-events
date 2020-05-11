@@ -3,12 +3,24 @@
   "displayName": "UnityEvents",
   "version": "0.1.1",
   "unity": "2019.3",
-  "description": "A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.",
+  "description": "A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.\nCustom Event Systems can be created to control when events are processed instead of relying on the update ticks.",
   "dependencies": {
-    "com.unity.burst": "1.1.1",
-    "com.unity.collections": "0.0.9-preview.11",
-    "com.unity.jobs": "0.0.7-preview.6",
+    "com.unity.burst": "1.3.0-preview.12",
+    "com.unity.collections": "0.8.0-preview.5",
+    "com.unity.jobs": "0.2.9-preview.15",
     "com.unity.mathematics": "1.1.0"
+  },
+  "keywords": [
+    "Unity",
+    "event",
+    "events system",
+    "jobs",
+    "multithreads"
+  ],
+  "author": {
+    "name": "Galvaniv Games",
+    "email": "sales@galvanicgames.com",
+    "url": "http://www.galvanicgames.com"
   },
   "repository": {
     "footprint": "7885d0f54cdae85360fa58ef4c476844203ba948",

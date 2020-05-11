@@ -153,7 +153,7 @@ namespace UnityEvents
 			BuildEventQueueJob job = new BuildEventQueueJob();
 			job.queuedEvents = _queuedEvents;
 			job.subscribers = _subscribers;
-			job.eventsToProcess = eventsToProcessQueue.ToConcurrent();
+			job.eventsToProcess = eventsToProcessQueue.AsParallelWriter();
 
 			job.Schedule(_queuedEvents.Length, _batchCount).Complete();
 
@@ -205,7 +205,7 @@ namespace UnityEvents
 			[ReadOnly]
 			public NativeList<EventTarget> subscribers;
 
-			public NativeQueue<UnityEvent<T_Event>>.Concurrent eventsToProcess;
+			public NativeQueue<UnityEvent<T_Event>>.ParallelWriter eventsToProcess;
 
 			public void Execute(int index)
 			{
