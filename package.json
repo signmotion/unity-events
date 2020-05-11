@@ -1,7 +1,7 @@
 {
   "name": "com.github.signmotion.unityevents",
   "displayName": "Unity Events With Jobs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "unity": "2019.3",
   "description": "A performant code focused strongly typed publisher/subscriber event system to decouple objects from talking directly to each other. Supports global event system and per GameObject event systems that send deferred events to be processed at a later tick (FixedUpdate, Update, or LateUpdate). Allows regular callback events and multithreaded jobs that trigger on events.\nCustom Event Systems can be created to control when events are processed instead of relying on the update ticks.",
   "dependencies": {
